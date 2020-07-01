@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BethanysPieShop.Models
 {
-    public class AppDbContext : IdentityDbContext<IdentityUser>
+    public class AppDbContext :DbContext// IdentityDbContext<IdentityUser>
     {
 
         public AppDbContext(DbContextOptions<AppDbContext> options)

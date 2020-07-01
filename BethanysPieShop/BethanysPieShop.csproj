@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200629162615_ShoppingCartAdd.cs" />
+    <Compile Remove="Migrations\20200629162615_ShoppingCartAdd.Designer.cs" />
     <Compile Remove="Migrations\20200701083454_AddUserNameIdentity.cs" />
     <Compile Remove="Migrations\20200701083454_AddUserNameIdentity.Designer.cs" />
     <Compile Remove="Migrations\20200701125331_addPhotoFormat.cs" />
@@ -13,6 +15,10 @@
     <Compile Remove="Migrations\20200701131200_removeFile.Designer.cs" />
     <Compile Remove="Migrations\20200701132513_lastUpdate.cs" />
     <Compile Remove="Migrations\20200701132513_lastUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20200701162810_removeIdenity.cs" />
+    <Compile Remove="Migrations\20200701162810_removeIdenity.Designer.cs" />
+    <Compile Remove="Migrations\20200701165246_removeMigration.cs" />
+    <Compile Remove="Migrations\20200701165246_removeMigration.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

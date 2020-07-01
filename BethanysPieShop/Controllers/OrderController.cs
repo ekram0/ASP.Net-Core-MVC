@@ -10,7 +10,6 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace BethanysPieShop.Controllers
 {
-    [Authorize]
     public class OrderController : Controller
     {
         private readonly ShoppingCart shoppingCart;
