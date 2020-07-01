@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Category>
+
+<li class="dropdown">
+    <a asp-controller="Pie"
+       asp-action="Index"
+       class="dropdown" data-toggle="dropdown">Pies<b class="caret"></b></a> 
+    <ul class="dropdown-menu">
+        @foreach (var item in Model)
+        {
+            <li>
+                <a asp-controller="Pie" asp-action="List"
+                   asp-route-category="@item.CategoryName">@item.CategoryName</a>
+            </li>
+        }
+        <li class="divider"/>
+        <li>
+            <a asp-controller="Pie" asp-action="List" 
+               asp-route-cateogry="">View All Pies</a>
+        </li>
+    </ul>
+</li>

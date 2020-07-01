@@ -1,0 +1,11 @@
+﻿@model ShoppingCartViewModel
+
+@if(Model.ShoppingCart.ShoppingCartItems.Count>0)
+{
+    <li>
+        <span class="glyphicon glyphicon-shopping-cart" ></span>
+        <span id="cart-status">
+            @Model.ShoppingCart.ShoppingCartItems.Count
+        </span>
+    </li>
+}
