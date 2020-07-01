@@ -29,22 +29,19 @@ namespace BethanysPieShop
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
+
             services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppDbContext>();
 
-            services.AddScoped<IPieRepository, PieRepository>();
-            
+
             services.AddScoped<ICategoryRepository, CategoryRepository>();
-            
+            services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
-            
             services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
-            
+
             services.AddHttpContextAccessor();
-            
             services.AddSession();
 
             services.AddControllersWithViews();
-
             services.AddRazorPages();
         }
 
